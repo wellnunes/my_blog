@@ -1,0 +1,19 @@
+Ativar virtual env:
+cd projeto
+cd venv\Scripts\activate
+
+Criar projeto:
+django-admin startproject blog
+
+Rodar projeto: 
+python manage.py runserver
+
+Criar tabelas db:
+python manage.py migrate
+
+Criar superuser:
+python manage.py createsuperuser
+
+Criar app:
+python manage.py startapp website
+
