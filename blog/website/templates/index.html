@@ -29,9 +29,6 @@
 							<h2>Django > all xD</h2>
 						</header>
 						<p>Um blog simples utilizando o Django Framework</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
 					</section>
 
 				<!-- Two -->
@@ -44,7 +41,10 @@
                                     <h3>{{ post.title }}</h3>
                                     <p>{{ post.sub_title }}</p>
                                     <span>{{ post.get_category_label }}</span>
-                                </article>
+									<ul class="actions">
+										<li><a href="{% url 'post_detail' post.id %}" class="button">Leia mais</a></li>
+									</ul>
+								</article>
                             {% endfor %}
 						</div>
 						<ul class="actions">
